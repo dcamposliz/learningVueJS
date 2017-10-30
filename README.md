@@ -67,9 +67,9 @@ Special attribute with the `v-` prefix that does something to the DOM. Reactivel
 	<span>{{msg}}</span>			// basic interpolation
 
 	<span v-text="msg"></span>		// using v-directive
-	
+
 	<span v-html="msg"></span>		// parses html
-	
+
 	<span v-once>{{msg}}</span>		// one-time interpolation
 
 ## Conditionals & loops
@@ -98,3 +98,35 @@ We can see this happen in the view layer:
 	// for loop
 
 	<li v-for="user in users">{{user.name}}</li>
+
+# Let's code
+
+Requirements:
+
+* npm (node package manager)
+* Ubuntu 16.04 LTS
+
+Install `vue-cli`:
+
+	$ sudo npm install -g vue-cli
+
+Initialize a project called `learning_vuejs`
+
+	$ vue init webpack learning_vuejs
+
+After setup, project configuration should look something like this:
+
+	? Project name learning_vuejs
+	? Project description A Vue.js project
+	? Author David Campos
+	? Vue build standalone
+	? Install vue-router? Yes
+	? Use ESLint to lint your code? No
+	? Setup unit tests with Karma + Mocha? No
+	? Setup e2e tests with Nightwatch? No
+
+Now, run the application in your development environment:
+
+	$ cd learning_vuejs
+	$ npm install
+	$ npm run dev
